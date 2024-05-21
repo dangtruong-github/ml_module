@@ -1,0 +1,15 @@
+name: mlops-env
+channels:
+  - defaults
+dependencies:
+  - pip=23.3.1
+  - python=3.9.18
+  - joblib==1.1.0
+  - markupsafe==1.1.1
+  - pip:
+    - zenml[server]==0.57.0
+    - catboost==1.0.4
+    - lightgbm==3.3.2
+    - optuna==2.10.0
+    - streamlit==1.8.1
+    - xgboost==1.5.2
