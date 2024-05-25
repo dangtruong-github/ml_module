@@ -18,5 +18,5 @@ class CustomDataset(Dataset):
   def __getitem__(self, idx):
     values = self.data.iloc[idx].values
     return dict(
-        user=int(values[0]), movie=int(values[1]), rating=np.float32(values[2])
+        user=int(values[0]), movie=int(values[1]), rating=np.float32(values[2]/5.0)
     )
