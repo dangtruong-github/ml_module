@@ -1,11 +1,11 @@
 import numpy as np 
 import pandas as pd 
 
-from DataProcesser import DataProcesser 
-from CustomLoader import CustomLoader 
-from MatrixFactorization import MatrixFactorization 
-from Trainer import Trainer
-from Predictor import Predictor 
+from .data_processor import DataProcesser 
+from .CustomLoader import CustomLoader 
+from .MatrixFactorization import MatrixFactorization 
+from .Trainer import Trainer
+from .Predictor import Predictor 
 
 class Service:
   def __init__(

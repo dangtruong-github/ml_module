@@ -5,7 +5,7 @@ class CustomDataset(Dataset):
   def __init__(self, data):
 
     """
-      Args: data: pd.DataFrame with columns: userId, movieId, rating
+      Args: data: pd.DataFrame with columns: user_id, movie_id, rating
       đây là data frame đã được chuyển về dạng index mới và rating được scale
 
     """

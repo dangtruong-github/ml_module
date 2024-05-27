@@ -1,0 +1,1 @@
+SELECT movie_id, user_id, rating from store_reviewrating;

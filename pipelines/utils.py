@@ -5,3 +5,6 @@ def pipeline(df):
     service.train()
     service.test()
     return service.predict()
+
+if "__name__" == "__main__":
+    pipeline(df)

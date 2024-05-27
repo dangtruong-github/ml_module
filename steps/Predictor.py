@@ -44,8 +44,8 @@ class Predictor:
     result = torch.zeros(size=(self.num_users, self.num_movies))
 
     for _, row in self.df_to_index.iterrows():
-            user_index = int(row['userId'])
-            movie_index = int(row['movieId'])
+            user_index = int(row['user_id'])
+            movie_index = int(row['movie_id'])
             rating = row['rating']
             result[user_index, movie_index] = rating
 

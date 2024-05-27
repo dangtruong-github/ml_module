@@ -21,7 +21,7 @@ a = [
   [0, 1, 2], 
   [3, 4, 5]
 ]
-a = pd.DataFrame(a, columns=['userId', 'movieId', 'rating'])
+a = pd.DataFrame(a, columns=['user_id', 'movie_id', 'rating'])
 
 service = Service(a)
 service.train()
