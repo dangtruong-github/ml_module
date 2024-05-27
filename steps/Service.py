@@ -51,12 +51,11 @@ class Service:
       trả về bảng ban đầu với real index cuả user, movie
     """
     predictions_index = self.predictor.predict()
-    res = np.full(shape=(max(self.user_to_index.keys())+1, max(self.movie_to_index.keys())+ 1),fill_value=0.6)
+    res = np.full(shape=(max(self.user_to_index.keys())+1, max(self.movie_to_index.keys())+ 1),fill_value=3.)
 
     for i in range(predictions_index.shape[0]):
       for j in range(predictions_index.shape[1]):
         res[self.index_to_user[i], self.index_to_movie[j]] = predictions_index[i, j].item()
 
     return res
-
 

@@ -67,6 +67,6 @@ class Predictor:
 
 
     for idx in range(predictions.size(0)):
-        result[unknown_users[idx], unknown_movies[idx]] = predictions[idx]
+        result[unknown_users[idx], unknown_movies[idx]] = predictions[idx]*5.
 
     return result.cpu()
