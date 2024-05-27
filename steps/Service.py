@@ -11,6 +11,8 @@ class Service:
   def __init__(
       self,
       data,
+      df_user,
+      df_movie,
       epochs=10
   ):
 
